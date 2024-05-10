@@ -1,0 +1,383 @@
+:root{
+    --text-color:#1a1c20;
+    --link-color:#4a76ee;
+    --background-color:#ededf4;
+    --background-image:url("p1.jpeg");
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "EB Garamond", sans-serif;
+    background-image: var(--background-image);
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+/*navbar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+nav .left a {
+    color: var(--text-color);
+    font-size:22px;
+    font-weight: 600;
+
+}
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+    
+}
+nav .right a :last-child>{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+nav .right a span {
+    margin-left: 5px;
+}
+.hero-section {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.hero-section .text {
+    flex: 3;
+    font-size: 25px;
+}
+
+.hero-section .text h2 {
+    font-size: 55px;
+} 
+
+.hero-section .text .links {
+    margin-top: 25px;
+} 
+
+.hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+} 
+
+.hero-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+
+}
+
+.hero-section .headshot {
+ flex: 2;
+ display: flex;
+ justify-content: right;
+}
+
+.hero-section .headshot img{
+    width: 350px;
+    border-radius: 50%;
+}
+
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.skills-section .text {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.skills-section .cells{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #0a0808;
+    border-radius: 5px;
+}
+
+.skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.skills-section .cells .cell span {
+    font-size: 18px;
+}
+
+.Certificates-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.Certificates-section h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.Certificates-section .text {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.Certificates-section .cs{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Certificates-section .cs .c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #090707;
+    border-radius: 5px;
+}
+
+.Certificates-section .cs .c img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.Certificates-section .cs .c span {
+    font-size: 18px;
+}
+
+.resume-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.resume-section h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.resume-section .resume  {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: floralwhite;
+    background: rgb(214, 75, 161);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+.resume:hover{
+    background: rgb(54, 1, 1);
+}
+
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+
+}
+
+.contact-section h2 {
+    font-size: 40px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text{
+    flex: 3;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.contact-section .group .imp{
+    display: block;
+    width: 350px;
+    border-radius: 50%;
+}
+.contact-section .group .imp img {
+    display: block
+    width: 350px;
+    border-radius: 50%;
+    
+}
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input, 
+.contact-section .group form textarea {
+    font-family: 'EB Garamond',sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    font-style: 16px;
+    font-family: 'EB Garamond',sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact-section .group form button:hover{
+    filter: brightness(.9);
+}
+
+.icons{
+    display: flex;
+    font-size: 3rem;
+    margin-top:0;
+    line-height: 0;
+    align-items: flex-end;
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    
+}
+
+.icons a { 
+    margin-right:75px;
+    color: rgb(72, 46, 64);
+  }
+
+.icons :hover{
+    transform: scale(1.5);
+}
+
+.footer{
+    background-color:rgb(224, 146, 146);
+    margin-top:28%;
+   margin: auto;
+}
+@media (max-width: 850px) {
+.hero-section .text h2 {
+    font-size: 35px;
+}
+}
+@media (max-widh: 740px) {
+    .hero-section {
+    flex-direction: column-reverse;
+    }
+.hero-section .headshot img {
+    width: 300px;
+  }
+  .contact-section .group {
+    flex-direction: column;
+
+  }
+}
+
+@media (max-width: 600px){
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a{
+       font-size: 22px; 
+    }
+
+    nav .right a :last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+     }
+    nav .right a span {
+        display: none;
+    }
+
+    .hero-section {
+        padding: 0 20px;
+    }
+
+    .hero-section .text h2 {
+        font-size: 30px;
+    }
+
+    .skills-section {
+        padding: 0 20px;   
+    }
+
+    .skills-section .cells .cell span {
+        font-size: 16px;
+    }
+   .Certificates-section{
+    padding: 0 20px;   
+     text-align: center;
+    }
+    .resume-section  {
+        padding: 0 20px;   
+        text-align: center;
+    }
+    .contact-section {
+        padding: 0 20px;
+    }
+    .footer-section{
+        padding: 0 20px;   
+        text-align: center;
+        margin-right: 2px;
+        gap: 2px;
+    }
+}
